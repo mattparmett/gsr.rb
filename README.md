@@ -1,6 +1,12 @@
-# gsr.rb: A Ruby library for reserving Wharton GSRs #
+# gsr.rb: A Ruby gem for reserving Wharton GSRs #
 
-gsr.rb is a simple Ruby library that allows your application to easily book and cancel Wharton Group Study Room (GSR) reservations.
+gsr.rb is a simple Ruby gem that allows your application to easily book and cancel Wharton Group Study Room (GSR) reservations.
+
+## Installation ##
+
+gsr.rb is hosted on RubyGems, so to install, simply run:
+
+```gem install gsr```
 
 ## How to use gsr.rb ##
 
