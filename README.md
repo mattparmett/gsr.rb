@@ -17,7 +17,7 @@ gsr.rb is hosted on RubyGems, so to install, simply run:
 To reserve a GSR for 60 minutes at noon on 9/18/2012 on the second floor:
 
 ```ruby
-require 'gsr.rb'
+require 'gsr'
 concierge = GSR.new(spike_username, spike_password)
 concierge.reserve('floor' => '2', 'start_time' => Time.new(2012, 9, 18, 12, 0, 0), 'duration' => 60)
 ```
@@ -33,7 +33,7 @@ concierge.reserve('floor' => '2', 'start_time' => Time.new(2012, 9, 18, 12, 0, 0
 To cancel the reservation closest to the current time (more specific cancellation functionality may be added in the future):
 
 ```ruby
-require 'gsr.rb'
+require 'gsr'
 concierge = GSR.new(spike_username, spike_password)
 concierge.cancel
 ```
@@ -43,5 +43,4 @@ concierge.cancel
 Security-wise, this probably isn't the most secure way to handle the spike username and password.  The user/pass combo is sent through a form on a secure web page, but no additional encryption/hashing is done on the credentials.  Still, if gsr.rb is incorporated into a Heroku app, for example, the spike credentials could be stored securely as environment variables.
 
 ## TODO ##
-*	More robust cancellation system?
-*	Create gem
+*	More robust cancellation system
